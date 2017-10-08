@@ -58,5 +58,5 @@ endfunction
 
 nnoremap <silent> <Plug>LocationPrevious    :<C-u>exe 'call <SID>LocationPrevious()'<CR>
 nnoremap <silent> <Plug>LocationNext        :<C-u>exe 'call <SID>LocationNext()'<CR>
-nmap <silent> <C-n>  <Plug>LocationPrevious
-nmap <silent> <C-m>  <Plug>LocationNext
+nmap <silent> <leader>n  <Plug>LocationPrevious
+nmap <silent> <leader>m  <Plug>LocationNext
