@@ -63,6 +63,9 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'skwp/greplace.vim'
 Plug 'easymotion/vim-easymotion'
 
+" Tag
+Plug 'majutsushi/tagbar'
+
 " textobjects
 "Plug 'austintaylor/vim-indentobject'
 "Plug 'bootleq/vim-textobj-rubysymbol'
@@ -207,7 +210,7 @@ so ~/.config/nvim/settings.vim
 "======================================
 
 " Ag
-command! -nargs=* -complete=file Ag Grepper! -tool ag -query <args>
+"command! -nargs=* -complete=file Ag Grepper! -tool ag -query <args>
 
 " Markdown
 augroup markdown
@@ -259,7 +262,7 @@ set laststatus=2
 
 set encoding=utf-8
 
-set clipboard+=unnamedplus
+"set clipboard+=unnamedplus
 
 set mouse=nir
 
@@ -292,18 +295,11 @@ let mapleader = ','
 
 set completeopt+=noselect
 
-" Error check
-"""""""""""""""""""""""""""""""""""""
-let g:syntastic_go_checkers = ['go', 'golint', 'govet']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_fmt_command = "goimports"
 
-filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
+" filetype plugin indent on
+" " show existing tab with 4 spaces width
+" set tabstop=4
+" " when indenting with '>', use 4 spaces width
+" set shiftwidth=4
+" " On pressing tab, insert 4 spaces
+" set expandtab

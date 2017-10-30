@@ -15,7 +15,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 """""""""""""""""""""""""""""""""""""
 " golang
 """""""""""""""""""""""""""""""""""""
-let g:syntastic_go_checkers = ['go', 'golint', 'govet']
+"let g:syntastic_go_checkers = ['go', 'golint', 'govet']
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_fmt_command = "goimports"
 
